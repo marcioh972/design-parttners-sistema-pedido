@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: design-patterns-pedidos
+
+server:
+  port: 8080
