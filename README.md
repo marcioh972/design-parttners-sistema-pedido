@@ -64,18 +64,3 @@ curl -X POST http://localhost:8080/orders \
 | Comportamental | Chain of Responsibility      | `behavioral/gof/chain/OrderValidator`                         | `behavioral/spring/chain/OrderValidationChain` (`List<Bean>` ordenada) |
 | Comportamental | Command                     | `behavioral/gof/command/OrderCommandInvoker`                   | *(comentário no próprio arquivo: equivalente seria `@EventListener` + `@Async`/fila)* |
 
-## Backlog (próximos padrões para adicionarmos juntos)
-
-- **Abstract Factory** — famílias de objetos relacionados (ex: "kit" de
-  frete + embalagem por região).
-- **Prototype** — clonar um `Order` como rascunho de outro.
-- **Composite** — categorias de produto aninhadas.
-- **Proxy** — cache de consulta de produto (`@Cacheable` vs proxy manual).
-- **State** — máquina de estados explícita para `OrderStatus` (hoje é só
-  um enum trocado manualmente — dá pra formalizar como State pattern).
-- **Mediator**, **Visitor**, **Memento** — mais avançados, bons para uma
-  segunda rodada quando os fundamentais estiverem consolidados.
-
-Me diga qual desses você quer implementar em seguida, ou se prefere que
-eu escreva testes unitários (JUnit 5 + Mockito) para o que já existe —
-seria um bom próximo passo antes de acrescentar mais padrões.
