@@ -1,4 +1,4 @@
-# Design Patterns com Java — Dos Clássicos (GoF) ao Spring Framework
+# Design Patterns com Java 
 
 Projeto de estudo: um **Sistema de Pedidos** simples onde cada padrão GoF
 aparece **duas vezes**, lado a lado:
